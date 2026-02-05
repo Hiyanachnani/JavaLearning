@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4bc59bfa-ad2e-4941-95d7-bb6cc625211c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../JdbcDemo_01/src/main/java/org/example/JdbcDemo_01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JdbcDemo_01/src/main/java/org/example/JdbcDemo_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JdbcDemo_01/src/main/java/org/example/beans/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JdbcDemo_02/src/main/java/org/example/JdbcDemo_01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JdbcDemo_02/src/main/java/org/example/JdbcDemo_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning1/src/com/hsbc/app/ArrayListDemo_01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning1/src/com/hsbc/app/EmployeeSet_Demo_01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning1/src/com/hsbc/app/EmployeeSet_Demo_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning1/src/com/hsbc/app/PersonDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning1/src/com/hsbc/app/TreeSetDemo_01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning1/src/com/hsbc/app/VehicleApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning1/src/com/hsbc/beans/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning1/src/com/hsbc/beans/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning1/src/com/hsbc/beans/EmployeeIdComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning1/src/com/hsbc/beans/Fortuner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning1/src/com/hsbc/beans/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning1/src/com/hsbc/beans/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning1/src/com/hsbc/beans/Slavia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning1/src/com/hsbc/beans/Supervisor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learning1/src/com/hsbc/beans/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsbc/beans/ArithmeticCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/hsbc/beans/ArithmeticCalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RestDemo_01/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RestDemo_01/src/main/java/com/hsbc/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RestDemo_01/src/main/java/com/hsbc/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RestDemo_01/src/main/java/com/hsbc/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RestDemo_01/src/main/java/com/hsbc/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RestDemo_01/src/main/java/com/hsbc/exception/InvalidIdException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RestDemo_01/src/main/java/com/hsbc/repo/ProductRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RestDemo_01/src/main/java/com/hsbc/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo_02/src/main/java/com/hsbc/beans/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo_02/src/main/java/com/hsbc/beans/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo_02/src/main/java/com/hsbc/beans/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo_02/src/main/java/com/hsbc/service/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJPADemo_01/src/main/java/com/hsbc/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJPADemo_01/src/main/java/com/hsbc/exception/InvalidIdException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJPADemo_01/src/main/java/com/hsbc/repo/ProductRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJPADemo_01/src/main/java/com/hsbc/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJPADemo_02/src/main/java/com/hsbc/entity/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJPADemo_02/src/main/java/com/hsbc/repo/BookRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringJPADemo_02/src/main/java/com/hsbc/service/BookService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/Administrator/JavaLearning/MyCalculator_01" value="38xdyJkCamZIrwqonwWJmNVz6oU" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="38xdyJkCamZIrwqonwWJmNVz6oU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.ArithmeticCalculatorTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/Administrator/JavaLearning/MyCalculator_01/src/main/java/com/hsbc/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.completions.CompletionsConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.hsbc.beans" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ArithmeticCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyCalculator_01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hsbc.beans.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hsbc.beans" />
+      <option name="MAIN_CLASS_NAME" value="com.hsbc.beans.ArithmeticCalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ArithmeticCalculatorTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4bc59bfa-ad2e-4941-95d7-bb6cc625211c" name="Changes" comment="" />
+      <created>1769745417659</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1769745417659</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hsbc/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

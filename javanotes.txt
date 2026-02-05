@@ -1,0 +1,313 @@
+class:
+ + variables
+ + constructors
+ + setters and getter
+
+constructor in inheritence: 
+ + every class will have a constructor by default
+ + in the default constructor of a subclass or explicit constructor of a sub class, the first line is 
+call to the super class no-arg constructor, which is the default constructor.
+ 
+
+===========================
+A super class reference variable can refer to any of its sub class object. but it can only call superclass' inherited
+methods, but not subclass own methods.
+
+
+if the subclass overrides its superclass method, this reference calls that method, the subclass version is executed.
+
+The cause for the difference in the behavious of the method call statement is the instance or object the reference
+is referring to. and objects are creates at runtime, a link established between method call and definition at runtime.
+so it is called dynamic linking, or dynamic binding. the change in behaviour is known as polymorphism. 
+
+
+
+abstract class: class definition qualified with "abstract" keyword, which can't have instances.
+the purpose of it forcing the developer to define subclasses needed to the business and use them. 
+
+abstract method: 
++ a method of a class dont have body
+
++ the class (which has abstract mehtod) is mandatorily abstract class, which dont allow instantiation. and forces the developer
+to define subclass and override super class' abstract method. 
+
+
+what will happen if i call the nobody method from application?
+absclass ref= new subclass();
+ref.meth1();
+
+ 
+                            default           private         protected        public
+same class                |  yes       |       yes        |     yes       |     Yes
+same package subclass     |  yes       |       no         |     yes       |     yes
+same package non-subclass |  yes       |       no         |     yes       |     yes
+diff package sub class    |  no        |       no         |     yes       |     yes
+diff package non-subclass |  no        |       no         |     no        |     yes
+
+
+
+to-do list:
+
+exception heirarchy
+
+
+exception handling
+try - to perform a task which may cause to throw exception during the execution
+catch - if the above try block has thwon this exception
+finally - execute this finally whether or not exception has thrown in the above catch or try.
+if u wich to write finally block after the try, you should not write catch block.
+
+throw - throw an exception when the given criteria matches
+types of exception
+
+
+
+throws
+
+
+
+/*
+byte
+short
+int
+long
+float
+double
+char
+boolean
+*/
+
+
+
+collections:
++ group of bjects - not values
+
++ wrapper classes - which helps to wrap 
+contruct object with value
+
+integer - int
+for every primitive data tyoe there is a wrapper class
+an object of int class wraps a value to int type
+Byte - byte
+Short - short
+INteger - int
+ LOng - long
+Float - float
+Double - double
+character - cjar
+boolean - boolean
+
+older approach :
+Integer intObj = new INteger(15);
+int i = intObj.intValue();
+
+Java-5 : autoboxing & autounboxing
+INteger intObj = 15;
+int i = intObj ;
+
++ Types of collections
++ java.util.Collection - interface
++ cant create directly : Collection col = new Collection(); {error}
+
++ Collections are generic (JDK 5) : Collection<class>
++ collection<INteger> or Collection<Person>
+
++ sub interfaces : LIst, Set
++ List (INterface)
+ + Positional access and allows duplicates
+
++SEt (INterface)
+ + no position access and allows unique elements
+
++ LIst : ArrayLIst, LInkedLIst, (Vector)
++ Set : TreeSet, HashSet
++ Map (I): TreeMap, HashMap
+
+java.unit.arraylist (oracle link only)
+
+TreeSet -> sorted order - uses binary tree
+- natured sort order
+- in the case of primitives with the help of wrappers and predefined classes
+- how manufacture written code knows how to identify an object is unique or duplicate?
+and - we should define a few additional methods, which helps JRE to identify unique or duplicate and
+greater or smaller.
+ + java.lang.comparable interface
+ + java.util.Comparator interface
+
+Comparable:
++ the beans class should implement Comparable interface.
+
+HashSet -> hashing
+- hashed order
++ component should override hashcode() and equals() methods.
+
+JDBC : java database connectivity
++ DB Manufacturer given library
++ 4 - steps
+  + load drivers
+  + establish a connection
+  + set-up an interface
+  + execute sql command and get result
+
+
+
+public class EmployeeService{
+public ArrayList<Employee> findAllEmployees(){}
+public Employee findEmployeeById(int id){}
+--- return types are not exactly as below, which we will discuss later---
+public boolean insertNewEmployee(Employee employee){}
+public boolean editEmployee(Employee employee){}
+public boolean deleteEmployee(int id){}
+}
+
+
+
+findAllEmployees
+findEMployeeById
+insertNewEmployee
+editEmployee
+deleteEmployee
+
+
+
+
+Spring Boot
+---------------
+Spring + Libraries which enhances Spring application development
+
+design pattern : guidelines to be followed while designing
+frameworks : libraries developer by following dps
+
+
+what is spring?
++ a framework
++ Factory design pattern
++ Singleton DP
++ inversion of control (IoC) : container  
++ dependency injection
++ data base connectivity
++ MVC 
+
+
+Difficulties with traditional spring application development.
++ spring configuration (XML)
++ dependency manager
+
+
+DAO: Data access object
+
+TO STUDY:
+Spring bean lifecycle management- from creation of the object to destroy
+
+
+-----------------------------------------------
+Spring Data JPA:
+JPA- Java Persistency API
+
+
+
+---------------
+Spring Boot Data JPA Application
+1. DEpendencies: DataJPA, MySQL Connector
+2. application.properties
+3. define enitiy class : com.hsbc.entity.Product
++ all args constructor
++ no args constructor
++ a constructor all args except the PK field
++ setters and getters
++ toString
++@Entity at the class level
++ @Id and @Generated value above PK field
+
+@Entity purpose? - everything participating in business (class). this class obj 
+will be saved into db with that table name.
+
+4. define an interface in com.hsbc.repo package with name <entity>Repo, which 
+should be sub interface of JpaRepository
++ @Repository at interface level
++ Follow appropriate type parameters to JpaRepository
+
+
+5. define a class in com.hsbc.service package with name <entity>Service
++ @Service at the class level
++ All Repo interface variables should be declared as members. 
++ define all args constructor 
++ define business service methods
++ within these methods invoke appropriate Repo methods
+
+6. Main class modifications
++ ApplicationContext's getBean() is used to obtain <entity>Service object.
++ call appropriate service method by passing necessary entities.
+
+
+============================================
+Exercise:
+
+
+UI
+
+Service
+
+Repo
+
+
+
+
+
+
+=============================================================================
+base url : http://localhost:8080/
+
+ENDPOINT          | FUNCTION   |  REQUEST         |   RESPONSE       | SERVICE METHOD
+employees         |   get      | NA               | all employees    | findAll
+employees/101     |   GET      | NA               | emps with 101 id | findById
+employees         |   POST     | json of emp obj  | json of emp obj  | saveEmployee
+employees/101     |   PUT      | json of emp obj  |   "              | editEmployee
+employees/101     |   DELETE   | not mandatory    | emp with 101 id  | deletEmployee
+
+prompt: generate a method findById for the url products/{id} to return an object of product
+if it is available in the repository . make sure the path variable should be of type integer
+
+
+if object not found return the status code
+
+
+
+{
+    "user": {
+        "id": 
+        "createdAt": "2026-02-03T09:49:09.038Z",
+        "updatedAt": "2026-02-03T09:49:09.038Z"
+    },
+    "key": "
+}
+
+
+make repo
+make new branch
+fetch new branch
+create folder .github 
+make another folder within .github as workflows
+then in that workflows folder make maven-build.yml
+open the yml file in notepad
+copy paste from kishor's repo
+save commit n push
+
+
+
+
+
+
+curl --request GET \ 
+  --url https://api.botpress.cloud/v1/chat/tags \ 
+  --header 'Authorization: Bearer ' \ 
+  --header 'x-bot-id: 
+
+
+
+
+hf token
+
+
+
+
